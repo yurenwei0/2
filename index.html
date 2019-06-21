@@ -27,6 +27,14 @@
 			live: true
 		});
 		wow.init();
+		
+		var isFirefox = navigator.userAgent.match("Firefox") //判斷是否為 FireFox
+		var isIE = (/Trident\/7\./).test(navigator.userAgent);
+		var isOpera = navigator.userAgent.match("Opera") //判斷是否為 Opera
+		var isSafari = navigator.userAgent.match("Safari") //判斷是否為 Safari 或 Google Chrome
+		if (isIE) {
+       			 alert("你使用的是IE，部分JS功能喪失")
+		}	
 	</script>
 </head>
 <style type="text/css">
