@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="UTF-8">
+	<title>履歷</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo.png" type="image/x-icon" />
+	<meta name="copyright" content="履歷">	
+    <!--引用Pace.js-->
+	<link href="./css/pace-theme-minimal.css" rel="stylesheet" />
+    <script src="./js/pace.js"></script> 
+	<!--圖片左右拖拉-->	
+	<script src="./js/swiper.min.js" ></script>
+	<!-- Bootstrap掛載 -->
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/bootstrap.min.js" defer> </script>
+	
+	<!--animate-->
+	<link rel="stylesheet" href="./css/animate.css">
+	<script src="./js/wow.js"></script>
+	<script>
+		var wow = new WOW({
+			boxClass: 'wow',
+			animateClass: 'animated',
+			offset: 0,
+			mobile: true,
+			live: true
+		});
+		wow.init();
+	</script>
+</head>
+<style type="text/css">
+@import url(./css/bootstrap.min.css); 
+@import url(./css/swiper.min.css); 
+@import url(./css/Footer.css); 
+	@font-face{
+			font-family: HanyiSentyZHAO;
+			src: url('./fonts/HanyiSentyZHAO.ttf')format("truetype"),
+			url('./fonts/HanyiSentyZHAO.woff')format("woff"),
+			url('./fonts/HanyiSentyZHAO.eot')format("embedded-opentype");    
+		}
+	@font-face{
+			font-family: cwTeXFangSong;
+			src: url('./fonts/cwTeXFangSong.ttf')format("truetype"),
+			url('./fonts/cwTeXFangSong.woff')format("woff"),
+			url('./fonts/cwTeXFangSong')format("embedded-opentype");  
+			
+				}
+.FangSong{
+	font-family: cwTeXFangSong; 
+		}		
+		.embFont01 {
+		font-size: 5.5vw;
+		font-family: HanyiSentyZHAO;  
+		}	
+		.mft {
+			font-size: 30px;
+		}
+div{
+	display: block; 
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+#bg1{
+  height: 100%;
+  width: 100%;
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+  
+  background-attachment: fixed;
+}
+
+#font1{
+  height: 50vh;
+  width: 80vw;
+  display: table;
+  background-attachment: fixed;
+  margin: 0px auto;
+}
+
+f1{
+  font-family: cwTeXFangSong;
+  color: #fff;
+  font-size: 3vw;
+  margin: 0;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.gotop {
+    position: fixed;
+    border-radius: 100px;
+    right: 20px;
+    bottom: 30px;
+    padding: 10px 16px;
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.36);
+    color: #FAFCFD;
+    cursor: pointer;
+    z-index:99999;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 18px;
+  box-shadow: 0px 4px 7px #777;
+  transition: background-color 0.4s ease-out;
+  z-index:99999;
+
+}
+
+<!--標題-->
+.titleall {
+	width: 100%;
+	height: 41px;
+	}
+.title1 {
+	width: 150px;
+	font-size: 40px;
+	padding-top: 10px;
+	color: #000000;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	}	
+.line {
+	width: 98.5%;
+	margin-left: 0.5%;
+	margin-bottom: 20px;
+	height: 50px;
+	background-image: url('./img/title.jpg');
+	}
+	
+<!--hover-->
+.galary {
+    background: aqua;
+    box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.5);
+    transition: 0.3s;
+}
+.galary:hover {
+       box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.5);
+}
+
+<!--圖片拖拉-->
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.picture {
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.detail {
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;
+  
+  h3 {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  span {
+    display: block;
+    font-size: 1.5vw;
+    color: #f44336;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  
+
+}
+
+
+
+</style>
+
+<body>
+<div class="gotop">˄</div>
+<!--menu-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar" style="">
+  <a class="navbar-brand" href="./index.html"><img src="img/logo.png" height="50" width="60"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto FangSong">
+      <li class="nav-item active">
+        <a class="nav-link" href="#anchor">介紹</a>
+      </li>
+	   <li class="nav-item active">
+        <a class="nav-link" href="#anchor1">技能</a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="#anchor2">作品</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<!--Banner-->
+	
+	<div id="carouselExampleIndicators" class="carousel " data-ride="carousel" data-interval="4000">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>			
+		</ol>
+		<div class="carousel-inner">						
+			<div class="carousel-item active">
+			<img class="d-block w-100" style="max-height:40vw;" src="img/B1.jpg" alt="首頁圖3">
+			<div class="carousel-caption d-none d-md-block FangSong">
+				<h1>游仁威</h1>
+				<p>練習</p>
+			</div>
+			<div class="carousel-caption ">
+			<h5 class="neon-effect embFont01"></h5>
+			</div>
+			</div> 
+			<div class="carousel-item">
+			<img class="d-block w-100" style="max-height:40vw;" src="img/B2.jpg" alt="首頁圖4">
+			<div class="carousel-caption FangSong">
+				<h1>個人</h1>
+				<p>練習</p>
+			</div>
+			</div> 
+		</div>		
+	</div>
+	
+<div class="container-fluid">
+	<!--介紹-->
+	<a name="anchor"></a> 
+	<div class="text sticky-top FangSong">	
+	<div class="line" style="margin-bottom:5px;">		
+		<div class="titleall">
+			<div class="title1">介紹</div>
+		</div>
+	</div>
+	</br>
+	<div class="container"> 
+		<div class="row justify-content-md-center">
+			<div class="col-md-3 galary wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.4s">
+				<img class="help-img-icon" width="18" height="14" src="img/msg.svg">
+				<h2>個人</h2>
+				<p>姓名:游仁威</p>
+				<p>姓別:男</P>
+				<p>年齡:24</p>
+				<p></p>
+			</div>
+			<div class="col-md-3 galary wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.8s">
+				<h2>學校</h2>
+				<p>校名:崑山科技大學</p>
+				<p>科系:資訊工程</p>
+				<p>畢業於2017年</p>
+				<p></p>
+			</div>
+			<div class="col-md-3 galary wow fadeIn" data-wow-duration="0.5s" data-wow-delay="1.2s">
+				<h2>工作</h2>
+				<p>2018-03~2019-04</p>
+				<p>職稱:網頁設計</p>
+				<p>類別:國際貿易</p>
+				<p></p>
+			</div>	
+		</div>
+	</div>	
+
+	<div id="bg1"><a name="anchor1"></a>
+		<div id="font1">
+			<f1 class="wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">個人技能<br>HTML、CSS、JavaScript</f1>
+		</div>
+	</div>
+	
+<!--圖片左右拖拉-->
+<a name="anchor2"></a> 
+<div class="line" style="margin-bottom:5px;">		
+		<div class="titleall">
+			<div class="title1">相關作品</div>
+		</div>
+	</div>
+<div class="wow slideInRight" data-wow-duration="1.0s" data-wow-delay="0.5s">
+<div class="swiper-container FangSong"> 
+  <div class="swiper-wrapper">   
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="img/p.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="detail">
+        <h3>作品1</h3>
+        <span>溫溼度監測</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="img/p1.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="detail">
+        <h3>作品2</h3>
+        <span>活動網頁</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="img/p2.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="detail">
+        <h3>作品3</h3>
+        <span>形象網頁</span>
+      </div>
+    </div>  
+  </div> 
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div> 
+</div>
+</div>
+
+  
+<!--頁尾-->
+<div class="rectangle-horiz"></div>
+<div id="footer">
+	<div id="utility-links">
+		<div class="help">
+			<ul>
+			<h3 class="left">聯絡</h3>     
+			<li><img class="help-img-icon" width="18" height="14" src="img/msg.svg"</img><a href="mailto:o0976552@gmail.com">o0976552@gmail.com</a></li>
+			<li><img class="help-img-icon" width="15" height="15" src="img/phone.svg"</img><a href="">0930-171-_ _ _</a></li>
+			</ul>
+		</div>
+		
+
+  
+    <div class="rectangle"></div>
+		<div class="card">
+			<ul>
+			<h3 class="left">主要元件</h3>
+			<li><a href="https://bootstrap.hexschool.com/" target="_blank"><img src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack-490x412.png"  width="20%"></a></li>
+			</ul>
+		</div>
+	</div>  
+  
+	<div id="newsletter-social">     
+		<div id="social">
+			<a href="https://www.youtube.com/" target="_blank">
+			<img width="34" height="34" src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/youtube_xrntt3.svg"></a></img>
+		</div>  
+	</div>      
+	<div class="rectangle-horiz"></div>
+	<div id="copyright">
+		<ul>
+		<li class="copy">© 2019 OOXXXX  All Rights Reserved.</li>
+		<li class="copy">嘉義縣</li>
+		</ul>
+	</div>	
+</div>	
+
+
+
+
+</div>
+</body>
+</html>
+
+<script>
+
+
+
+<!--圖片拖拉-->
+var swiper = new Swiper(".swiper-container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 350,
+    modifier: 1,
+    slideShadows: true
+  },
+  pagination: {
+    el: ".swiper-pagination"
+  }
+});
+
+<!--錨點-->
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+$(".gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+
+<!--導覽列-->
+window.onscroll = () => {
+  const nav = document.querySelector('#navbar');
+  if(this.scrollY <= 10) nav.className = 'navbar navbar-expand-lg navbar-dark fixed-top'; else nav.classList.add("bg-primary");
+};
+
+
+
+</script>
